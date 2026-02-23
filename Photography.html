@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Photography Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Poppins, sans-serif;
+  background:#0b0b0b;
+  color:#eee;
+}
+
+/* NAVBAR */
+header{
+  position:absolute;
+  top:0;
+  width:100%;
+  padding:25px 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:10;
+}
+
+.logo{
+  font-size:22px;
+  color:#d4b26a;
+  font-family:Playfair Display;
+}
+
+nav a{
+  color:#ccc;
+  text-decoration:none;
+  margin-left:30px;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:#d4b26a;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-family:Playfair Display;
+  font-size:60px;
+  color:#d4b26a;
+  margin-bottom:10px;
+}
+
+.hero h2{
+  font-size:38px;
+  letter-spacing:6px;
+}
+
+.hero p{
+  margin-top:10px;
+  font-size:14px;
+  color:#aaa;
+}
+
+.hero button{
+  margin-top:30px;
+  padding:12px 30px;
+  background:#d4b26a;
+  border:none;
+  color:#000;
+  cursor:pointer;
+}
+
+/* ABOUT */
+.about{
+  padding:120px 80px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.about img{
+  width:100%;
+  border-radius:6px;
+}
+
+.about h3{
+  font-family:Playfair Display;
+  color:#d4b26a;
+  margin-bottom:15px;
+  font-size:28px;
+}
+
+.about p{
+  color:#bbb;
+  line-height:1.7;
+}
+
+/* SERVICES */
+.services{
+  padding:80px;
+  text-align:center;
+}
+
+.services h3{
+  font-family:Playfair Display;
+  color:#d4b26a;
+  margin-bottom:40px;
+  font-size:30px;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.service{
+  background:#111;
+  padding:15px;
+}
+
+.service img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.service h4{
+  margin-top:10px;
+  color:#ccc;
+}
+
+/* CONTACT */
+.contact{
+  padding:100px 80px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+}
+
+.contact h3{
+  font-family:Playfair Display;
+  color:#d4b26a;
+  margin-bottom:20px;
+}
+
+.contact input,
+.contact textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:12px;
+  background:#111;
+  border:1px solid #333;
+  color:#fff;
+}
+
+.contact button{
+  padding:12px;
+  background:#d4b26a;
+  border:none;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  font-size:13px;
+  color:#777;
+  background:#000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Photography</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Capturing</h1>
+    <h2>MOMENTS</h2>
+    <p>THAT LAST FOREVER</p>
+    <button>View Portfolio</button>
+  </div>
+</section>
+
+<section class="about">
+  <img src="https://images.unsplash.com/photo-1519183071298-a2962be96cfd">
+  <div>
+    <h3>About Me</h3>
+    <p>
+      Hi, I’m Sanya, a passionate photographer capturing life’s
+      beautiful moments. With an eye for detail, I create timeless
+      memories.
+    </p>
+  </div>
+</section>
+
+<section class="services">
+  <h3>My Services</h3>
+  <div class="service-grid">
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+      <h4>Portrait</h4>
+    </div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+      <h4>Wedding</h4>
+    </div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <h4>Landscape</h4>
+    </div>
+    <div class="service">
+      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+      <h4>Event</h4>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div>
+    <h3>Get In Touch</h3>
+    <p>Email: yourmail@gmail.com</p>
+    <p>Phone: +91 12345 67890</p>
+    <p>Location: Your City</p>
+  </div>
+
+  <form>
+    <input placeholder="Name">
+    <input placeholder="Email">
+    <textarea rows="4" placeholder="Message"></textarea>
+    <button>Send</button>
+  </form>
+</section>
+
+<footer>
+  © 2024 Your Photography. All Rights Reserved.
+</footer>
+
+</body>
+</html>
